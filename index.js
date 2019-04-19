@@ -1,20 +1,3 @@
-# calcGrade
-交大新买的“新版研究管理信息系统”的成绩查询居然还要自己算成绩，为了避免手动输入20+课程因为遗漏或按错导致成绩计算错误（反正不是因为懒，嗯），这种事情还是交给计算机吧，嗯。步骤如下
-
-## 打开chrome
-![chrome](https://github.com/dieice2030/calcGrade/blob/master/screenshot/chrome.png)
-
-## 进入研究管理系统
-![system](https://github.com/dieice2030/calcGrade/blob/master/screenshot/system.png)
-
-## 进入成绩查询页面
-![web](https://github.com/dieice2030/calcGrade/blob/master/screenshot/web.png)
-
-## 打开控制台
-![console](https://github.com/dieice2030/calcGrade/blob/master/screenshot/console.png)
-
-## 输入以下命令
-```JS
 var frame = document.getElementById('mainFrame');
 var courses = frame.contentWindow.document.getElementsByClassName('datagrid-btable');
 var compulsory = courses[0].children[0];
@@ -41,7 +24,3 @@ var gradeTotal = ((gradeElectedTotal + gradeCompTotal) / (creditElected + credit
 console.log(`必修成绩是${gradeComp}`);
 console.log(`选修成绩是${gradeElected}`);
 console.log(`总成绩是${gradeTotal}`);
-```
-
-## 得到结果
-![result](https://github.com/dieice2030/calcGrade/blob/master/screenshot/result.png)
