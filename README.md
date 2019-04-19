@@ -11,9 +11,11 @@
 ![web](https://github.com/dieice2030/calcGrade/blob/master/screenshot/web.png)
 
 ## 打开控制台
+`F12`或者`更多工具->开发者工具`
 ![console](https://github.com/dieice2030/calcGrade/blob/master/screenshot/console.png)
 
 ## 输入以下命令
+复制以下命令，在控制台粘贴
 ```JS
 var frame = document.getElementById('mainFrame');
 var courses = frame.contentWindow.document.getElementsByClassName('datagrid-btable');
